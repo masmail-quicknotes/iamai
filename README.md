@@ -3,7 +3,7 @@
 <h2>Iniciación en la I.A.</h2>
 
 <h3>Componentes</h3>
-<li>Jetso Nango 2G</li>
+<li>NVIDIA JETSON NANO 2GB Developer Kit with WIRELESS USB Adapter</li>
 <li>micro SD 64GB</li>
 
 <h3>1 - Nos bajamos la imagen del firmware "Jetson Nano 2GB Developer Kit SD Card Image" de 6GB.</h3>
