@@ -6,4 +6,4 @@ https://www.balena.io/etcher/
 
 
 URLs:
-https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide
+https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit
