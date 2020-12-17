@@ -9,16 +9,16 @@
 ***
 
 ## Componentes
-- NVIDIA JETSON NANO 2GB Developer Kit with WIRELESS USB Adapter.
+- NVIDIA JETSON NANO 2GB Developer Kit con Adaptador USB WIRELESS.
 - Tarjeta Memoria Micro SD 64GB.
   - microSD Card (UHS-1 32 GB minimum)
-  - 64 GB or more recommended
-  - High endurance card recommended
-- USB keyboard and mouse
-- HDMI display
-- USB-C power supply (5V⎓3A).
-- 802.11ac wireless adapter and extension cable.
-- Compatible webcam camera such as: 
+  - 64 GB o más recomendado
+  - Se recomienda una tarjeta de alta resistencia
+- Teclado y ratón USB
+- Pantalla HDMI y cable HDMI.
+- Fuente de alimentación USB-C (5V⎓3A).
+- Adaptador wireless 802.11ac y cable de extensión.
+- Camara webcam compatible, tales como: 
   - Logitech C270 Webcam (USB webcam camera)
   - Raspberry Pi V2 Camera
 
@@ -34,7 +34,7 @@
 
 [https://www.balena.io/etcher/](https://www.balena.io/etcher/)
 
-3. Conectamos la memoria microSD a la placa Jetson Nano, el teclado, el Monitor HDMI, el adaptador USB WiFi y conectamos la alimentación al conector USB-C.
+3. Conectamos la memoria microSD a la placa Jetson Nano, el teclado y el ratón, la pantalla HDMI, el adaptador USB WiFi y conectamos la alimentación al conector USB-C.
 
 La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los pines metálicos de la tarjeta microSD mirando hacia arriba.
   
@@ -48,15 +48,15 @@ La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los 
 
 6. Conectamos nuestra webcam a la Jetson.
 
-Podemos mirar el video en el apartado `URLs` para ver como conectar la Rasberry PI Camera V2 al conector `MPI CSI-2`.
+Podemos mirar el video en el apartado `URLs` para ver como conectar la `Rasberry PI Camera V2` al conector `MPI CSI-2`.
 
-7. Creamos el directorio donde compartiremos los datos con la imagen docker del JupyterLab Server.
+7. Creamos el directorio donde compartiremos los datos con la imagen docker del servidor JupyterLab.
 
         mkdir -p ~/nvdli-data
 
-8. Arrancamos el JupyterLab Server dockerizado:
+8. Arrancamos el servidor JupyterLab dockerizado:
 
-Si tenemos la camara USB Camera, ejecutaremos los siguientes comandos.
+Si tenemos una camara USB, ejecutaremos los siguientes comandos.
 
         echo "sudo docker run --runtime nvidia -it --rm --network host \
             --volume ~/nvdli-data:/nvdli-nano/data \
@@ -65,7 +65,7 @@ Si tenemos la camara USB Camera, ejecutaremos los siguientes comandos.
         chmod +x docker_dli_run.sh
         ./docker_dli_run.sh
 
-Si usamos la camara CSI, ejecutaremos los siguientes comandos.
+Si tenemos una camara CSI, ejecutaremos los siguientes comandos.
 
         echo "sudo docker run --runtime nvidia -it --rm --network host \
               --volume ~/nvdli-data:/nvdli-nano/data \
@@ -75,15 +75,15 @@ Si usamos la camara CSI, ejecutaremos los siguientes comandos.
         chmod +x docker_dli_run.sh
         ./docker_dli_run.sh
 
-Este proceso puede tardar un rato, ya que se tiene que bajar las imagenes.
+Este proceso puede tardar un rato, ya que se tiene que bajar las imágenes docker.
 
-9.  Una vez docker ha arrancado tenemos el servicio JupyterLab Server en el puerto 8888. Nos aparecera un mensaje parecido al siguiente:
+9.  Una vez docker ha arrancado tenemos el servicio JupyterLab en el puerto 8888. Y nos aparecerá un mensaje parecido al siguiente:
 
 > Logging Into The JupyterLab Server \
 > browser: 192.168.55.1:8888 \
 > password: dlinano 
 
-10. Ahora podremos acceder desde nuestro portatil al Servidor JupyterLab usando un navegador web. Por ejemplo:
+10. Ahora podremos acceder desde nuestro portatil al servidor JupyterLab usando un navegador web. Por ejemplo:
 
 [http://192.168.55.1:8888/](http://192.168.55.1:8888/)
 
