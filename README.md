@@ -79,9 +79,9 @@ Este proceso puede tardar un rato, ya que se tiene que bajar las imagenes.
 
 9.  Una vez docker ha arrancado tenemos el servicio JupyterLab Server en el puerto 8888. Nos aparecera un mensaje parecido al siguiente:
 
-> Logging Into The JupyterLab Server
-> browser: 192.168.55.1:8888
-> dlinano
+> Logging Into The JupyterLab Server \
+> browser: 192.168.55.1:8888 \
+> password: dlinano 
 
 10. Ahora podremos acceder desde nuestro portatil al Servidor JupyterLab usando un navegador web. Por ejemplo:
 
