@@ -23,11 +23,11 @@
 
 1. Nos bajamos la imagen del firmware `Jetson Nano 2GB Developer Kit SD Card Image` de 6GB.
 
-        [https://developer.nvidia.com/jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image)
+[https://developer.nvidia.com/jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image)
 
 1. La introducimos en la memoria microSD de 64GB con por ejemplo Etcher desde un ordenador.
 
-        [https://www.balena.io/etcher/](https://www.balena.io/etcher/)
+[https://www.balena.io/etcher/](https://www.balena.io/etcher/)
 
 1. Conectamos la memoria microSD a la placa Jetson Nano, conectamos la alimentación, el teclado y el Monitor HDMI.
 
@@ -43,7 +43,7 @@ La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los 
 
 1. Conectamos nuestra webcam a la Jetson.
 
-> Mirar video de como conectar las Rasberry PI Camera V2 al conector `MPI CSI-2 camera`.
+Podemos mirar el video en el apartado `URLs` para ver como conectar la Rasberry PI Camera V2 al conector `MPI CSI-2`.
 
 1. Creamos el directorio donde compartiremos los datos con la imagen docker del JupyterLab Server.
 
@@ -51,7 +51,7 @@ La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los 
 
 1. Arrancamos el JupyterLab Server dockerizado:
 
-  > Si tenemos la camara USB Camera, ejecutaremos los siguientes comandos.
+Si tenemos la camara USB Camera, ejecutaremos los siguientes comandos.
 
         echo "sudo docker run --runtime nvidia -it --rm --network host \
             --volume ~/nvdli-data:/nvdli-nano/data \
@@ -60,7 +60,7 @@ La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los 
         chmod +x docker_dli_run.sh
         ./docker_dli_run.sh
 
-  > Si usamos la camara CSI, ejecutaremos los siguientes comandos.
+Si usamos la camara CSI, ejecutaremos los siguientes comandos.
 
         echo "sudo docker run --runtime nvidia -it --rm --network host \
               --volume ~/nvdli-data:/nvdli-nano/data \
@@ -70,7 +70,7 @@ La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los 
         chmod +x docker_dli_run.sh
         ./docker_dli_run.sh
 
-> Este proceso puede tardar un rato, ya que se tiene que bajar las imagenes.
+Este proceso puede tardar un rato, ya que se tiene que bajar las imagenes.
 
 1.  Una vez docker ha arrancado tenemos el servicio JupyterLab Server en el puerto 8888. Nos aparecera un mensaje parecido al siguiente:
 
@@ -80,7 +80,7 @@ La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los 
 
 1. Ahora podremos acceder desde nuestro portatil al Servidor JupyterLab usando un navegador web. Por ejemplo:
 
-        http://192.168.55.1:8888/  
+[http://192.168.55.1:8888/](http://192.168.55.1:8888/)
 
 **... continuará ...**
 
