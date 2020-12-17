@@ -30,7 +30,7 @@
 
   - La tarjeta microSD se tiene que conectar al puerto microSD de la Jetson con los pines metalicos de la tarjeta microSD mirando hacia arriba.
   
-  ![Placa Jetson Nano 2GB](./placa-jetson-nano-2GB.png)
+  ![Placa Jetson Nano 2GB](./jetson-nano-2gb.png)
 
 1. Realizamos el proceso de instalación de la imagen Ubuntu, creando nuestro usuario para acceder a la Jetson.
 
