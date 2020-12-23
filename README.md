@@ -95,7 +95,7 @@ Este proceso puede tardar un rato, ya que se tiene que bajar las imágenes docke
 
 La interfaz de JupyterLab es un panel que proporciona acceso a los cuadernos interactivos de Jupyter.
 
-[x] **... continuará ...**
+- [x] **... continuará ...**
 
 ***
 
