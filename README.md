@@ -1,10 +1,14 @@
-# I am A.I
+# I am A.I. Iniciación en la I.A.
 
-# Iniciación en la I.A.
+# Índice
 
 - [Componentes](#componentes)
+
 - [Puesta en marcha](#puesta-en-marcha)
+
 - [Empezando con JupyterLab](#empezando-con-jupyterlab)
+
+- [URLs referencia](#urls-referencia)
 
 ***
 
@@ -91,11 +95,11 @@ Este proceso puede tardar un rato, ya que se tiene que bajar las imágenes docke
 
 La interfaz de JupyterLab es un panel que proporciona acceso a los cuadernos interactivos de Jupyter.
 
-  **... continuará ...**
+[x] **... continuará ...**
 
 ***
 
-## URLs Referencia:
+# URLs Referencia
 - [Getting Started with Jetson Nano 2GB Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit)
 - [Welcome to Getting Started with AI on Jetson Nano!](https://courses.nvidia.com/courses/course-v1:DLI+S-RX-02+V2/)
 - [Raspberry Pi Camera Connection Demonstration](https://dli-lms.s3.amazonaws.com/data/c-rx-02/videos/3_Camera-insertion.mp4)
